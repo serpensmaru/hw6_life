@@ -1,0 +1,142 @@
+
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.fa-refresh{
+color: #6c14f8;
+    font-size: 20px;
+}
+.fa-refresh:hover{
+    color: #f711e8;
+}
+.fa-times-circle{
+    color: red;
+    margin-left: 90%;
+    font-size: 25px;
+    cursor: pointer;
+}
+.fa-times-circle:hover{
+    font-size: 30px;
+    color: #913030;
+}
+.fa-paper-plane-o{
+    font-size: 50px;
+}
+
+.btn-send{
+border: none;
+    background-color: rgb(126, 196, 133);
+}
+.form{
+    display: grid;
+    grid-auto-flow: column;
+    border: black 1px solid;
+    width: 60%;}
+
+textarea{
+    border:none;
+    width: 90%;
+   min-height: 100px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.container-cards{
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: fit-content(100px);
+    height: 400px;
+    overflow: auto;
+}
+textarea:focus{
+    outline:none;
+}
+.title{
+    display: grid;
+   grid-auto-flow: column;
+    width: 150px;
+font-size: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+.btn-refresh{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: black 1px solid;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+}
+
+
+.container{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+    padding-top: 20px;
+}
+.cards{
+    display: grid;
+    border: black 1px solid;
+    grid-template-rows:auto;
+    overflow: auto;
+   width: 60%;
+    padding: 10px;
+  }
+
+.card{
+    display: grid;
+    border: black 1px solid;
+    padding: 5px;
+    width: 80%;
+    height: max-content;
+}
+.message{
+    font-size: 25px;
+    justify-self: right;
+}
+
+
+
+
+@media screen and (max-width: 1028px){
+.container-cards{
+    grid-template-columns: 1fr;
+}
+    .message{
+        justify-self: center;
+    }
+    .card{
+width: 70%;
+    }
+    .form{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 797px){
+    .card{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+    .container-cards{
+        height: 50vh;
+    }
+
+}
+
+@media screen and (max-width: 380px){
+    .cards{
+
+        color: #11f711;
+    }
+}
